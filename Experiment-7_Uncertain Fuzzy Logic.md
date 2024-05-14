@@ -5,7 +5,7 @@ def low(x):
     return max(0, min((20-x)/10, 1))
 
 def medium(x):
-    return max(0, min(x-20)/10, 1, (40-x)/10)
+    return max(0, min((x-20)/10, 1, (40-x)/10))
 
 def high(x):
     return max(0, min((x-30)/10, 1))

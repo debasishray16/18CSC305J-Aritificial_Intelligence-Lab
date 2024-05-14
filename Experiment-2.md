@@ -29,3 +29,34 @@ if __name__ == '__main__':
     print("\nColoring of graph 2")
     greedyColoring(g2, 5)
 ```
+
+
+# Simple Agent Problem
+
+```py
+
+def simple_reflex_agent(location , status):
+
+    if status=="Hungry":
+        print("Looking for food...")
+        if location=="Home":
+            print("Found food at home.")
+        else:
+            print("Looking for a restaurent nearby.")
+    
+
+    elif status=="Tired":
+        print("Looking for a place to rest...")
+        if location=="Home":
+            print("Going to bed.")
+        else:
+            print("Looking for a hotel nearby.")
+    
+
+    else:
+        print("Doing nothing")
+    
+simple_reflex_agent("Home","Hungry")
+simple_reflex_agent("Park","Tired")
+simple_reflex_agent("Office","Normal")
+```
